@@ -9,7 +9,7 @@ import (
 type SuccessResponse struct {
 	Message string      `json:"message"` // El mensaje asociado a la respuesta.
 	Status  int         `json:"status"`  // El código de estado HTTP de la respuesta.
-	Data    interface{} // Los datos asociados a la respuesta.
+	Data    interface{} `json:"data"`    // Los datos asociados a la respuesta.
 }
 
 // success es una función interna que crea una nueva instancia de SuccessResponse con el mensaje, los datos y el código de estado proporcionados.
